@@ -45,7 +45,7 @@ listTask.addEventListener("click", function(removeEvent){
     }
 });
 changeTask.addEventListener("click", function(){
-    let parentContainer = this.parentElement.parentElement;
+    let parentContainer = changeTask.parentNode;
     let firstInput = parentContainer.querySelector("input");
     if (firstInput) {
         if (firstInput.hasAttribute("readonly")) {
