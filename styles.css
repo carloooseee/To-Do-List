@@ -5,11 +5,12 @@
 
 }
 :root{
-    --background: rgba(18, 85, 167, 0.577);
-    --button: rgb(182, 204, 246);
-    --task:rgb(208, 224, 255);
+    --background: rgba(244, 244, 244, 0.577);
+    --button: rgb(206, 206, 206);
+    --task:rgb(235, 235, 235);
 }
 body{
+    background-color: rgb(78, 78, 78);
     display: flex;
     justify-content: center;
 }
@@ -23,7 +24,7 @@ button, input{
     padding: 1em;
 }
 h1{
-    color: white;
+    color: rgb(83, 83, 83);
 }
 button{
     cursor: pointer;
