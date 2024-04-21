@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>To-Do List</h1>
+        <input type="text" id="inputTask" placeholder="Add task">
+        <button id="addTask">Add Task</button>
+        <button id="clearTask">Clear Task</button>
+        <p id="warningMessage" style="color: red"></p>
+        <div class="containerTask" id="listTask">
+            <div class="task" id="task">
+                <input class="listedTask" id="addedInput" type="text" readonly value="Make a To-Do List">
+                <button class="removeButton" id="removeButton"></button>
+                <button class="changeButton" id="changeButton"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

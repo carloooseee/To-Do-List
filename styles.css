@@ -1,0 +1,59 @@
+*{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+:root{
+    --background: rgba(18, 85, 167, 0.577);
+    --button: rgb(182, 204, 246);
+    --task:rgb(208, 224, 255);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.mainContainer{
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 1em;
+    height: max-content;
+}
+button, input{
+    padding: 1em;
+}
+h1{
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+#clearTask, #addTask, #inputTask{
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button)
+}
+.task{
+    background-color: var(--task);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.listedTask{
+    border: none;
+    background-color: var(--task);
+}
+.removeButton, .changeButton{
+    border: none;
+    border-radius: 100%;
+}
+.removeButton{
+    background-color: rgb(223, 5, 5);
+}
+.changeButton{
+    background-color: rgb(8, 207, 18);
+}
