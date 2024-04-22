@@ -45,7 +45,7 @@ listTask.addEventListener("click", function(removeEvent){
     }
 });
 changeTask.addEventListener("click", function(changeEvent){
-    if(chwngeEvent.target.classList.contains("changeButton")) {
+    if(changeEvent.target.classList.contains("changeButton")) {
         let taskContainer = changeEvent.target.parentNode;
         taskContainer.setAttribute("readonly");
     }
