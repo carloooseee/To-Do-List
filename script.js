@@ -44,15 +44,10 @@ listTask.addEventListener("click", function(removeEvent){
         taskContainer.remove();
     }
 });
-changeTask.addEventListener("click", function(){
-    let parentContainer = this.parentElement.parentElement;
-    let firstInput = parentContainer.querySelector("input");
-    if (firstInput) {
-        if (firstInput.hasAttribute("readonly")) {
-            firstInput.removeAttribute("readonly");
-        } else {
-            firstInput.setAttribute("readonly", "readonly");
-        }
+changeTask.addEventListener("click", function(changeEvent){
+    if(chwngeEvent.target.classList.contains("changeButton")) {
+        let taskContainer = changeEvent.target.parentNode;
+        taskContainer.setAttribute("readonly");
     }
 });
 clearTask.addEventListener("click", function(){
