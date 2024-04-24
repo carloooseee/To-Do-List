@@ -5,12 +5,12 @@
 
 }
 :root{
-    --background: rgba(244, 244, 244, 0.577);
-    --button: rgb(206, 206, 206);
+    --background: rgb(222, 222, 222);
+    --button: rgb(235, 235, 235);
     --task:rgb(235, 235, 235);
 }
 body{
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(91, 86, 86);
     display: flex;
     justify-content: center;
 }
@@ -24,13 +24,13 @@ button, input{
     padding: 1em;
 }
 h1{
-    color: rgb(83, 83, 83);
+    color: rgb(0, 0, 0);
 }
 button{
     cursor: pointer;
 }
 #clearTask, #addTask, #inputTask{
-    color: black;
+    color: rgb(5, 4, 4);
     border: none;
     border-radius: 10px;
     background-color: var(--button)
