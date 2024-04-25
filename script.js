@@ -29,7 +29,7 @@ addTask.addEventListener("click", function(){
         taskRemove.setAttribute("id", "removeButton");
         taskChange.setAttribute("id", "changeButton");
 
-        // taskInputed.setAttribute("readonly", "readonly");
+        taskInputed.setAttribute("readonly", "readonly");
         taskInputed.value = inputTask.value;
         inputTask.value = "";
         warningMessage.innerText = "";
@@ -44,14 +44,15 @@ listTask.addEventListener("click", function(removeEvent){
         taskContainer.remove();
     }
 });
-changeTask.addEventListener("click", function(){
-    let parentContainer = changeTask.parentNode;
-    let firstInput = parentContainer.querySelector("input");
-    if (firstInput) {
-        if (firstInput.hasAttribute("readonly")) {
-            firstInput.removeAttribute("readonly");
+changeTask.addEventListener("click", function(changeEvent){
+    if(changeEvent.target.classList.contains("changeButton")) {
+        let taskContainer = changeEvent.target.parentNode;
+        let taskInput = taskContainer.querySelector(".listedTask");
+
+        if (taskInput.hasAttribute("readonly")) {
+            taskInput.removeAttribute("readonly");
         } else {
-            firstInput.setAttribute("readonly", "readonly");
+            taskInput.setAttribute("readonly", "readonly");
         }
     }
 });
